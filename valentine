@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #d10000;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .no {
+            background-color: #333;
+            color: white;
+        }
+        .message {
+            display: none;
+            font-size: 24px;
+            color: #d10000;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rose_american_beauty.JPG/800px-Rose_american_beauty.JPG" alt="Red Rose">
+    <h1>Will you be my Valentine?</h1>
+    <div class="buttons">
+        <button class="yes" onclick="showMessage()">Yes</button>
+        <button class="no" onclick="alert('Wrong answer! Try again. 😆')">No</button>
+    </div>
+    <div class="message" id="message"> You are mine ❤️</div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
